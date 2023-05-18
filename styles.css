@@ -2,7 +2,10 @@ body {
     /*background-image: url('https://i.pinimg.com/originals/2d/22/c5/2d22c59faf822a7558e49ce596b10254.gif');*/
     background-image: url('sol.gif');
     background-repeat: no-repeat;
-    background-size: cover; 
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    position: relative;
 }
 
 h1 {
@@ -11,7 +14,10 @@ h1 {
     color: pink;
 }
 
-h2 {
+@keyframes pulsar {   0% {     transform: scale(1);   }   50% {     transform: scale(1.2);   }   100% {     transform: scale(1);   } }  h1 {   animation: pulsar 2s ease-in-out infinite; }
+
+div {
     text-align: center;
-    padding: 200px;
+    position: absolute;
+    top: 275px;
 }
